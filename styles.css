@@ -4,9 +4,13 @@
   padding: 0px;
   margin: 0px;
 }
+body {
+  height: 200vh;
+}
 .navbar {
   background-color: #1b1b1b;
   width: 100%;
+  position: fixed;
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -72,8 +76,10 @@
 .box-container {
   display: none;
   background-color: #1b1b1b;
-  margin-top: -1px;
+  margin-top: 70px;
+  width: 100%;
   padding: 15px;
+  position: fixed;
   animation: dropDown 0.6s ease-in-out;
   transform-origin: top center;
 }
@@ -85,7 +91,7 @@
   padding-bottom: 20px;
   color: #00fff0;
   background-color: #1b1b1b;
-  width: 96.5%;
+  width: 90%;
   text-align: center;
   border-radius: 4px;
   margin-top: 15px;
@@ -124,7 +130,7 @@
 
 @media (max-width: 870px) {
   .HmBurger {
-    position: absolute;
+    position: fixed;
     margin: 10px;
     width: 40px;
     top: 12px;
@@ -143,6 +149,7 @@
   }
   .CrossBurger {
     display: block;
+    position: fixed;
   }
 }
 .hidden {
