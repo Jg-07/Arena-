@@ -6,7 +6,25 @@
 }
 body {
   height: 200vh;
+  background-color: #1b1b1b;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: #1b1b1b;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00fff0;
+  border-radius: 6px;
+  border: #1b1b1b solid 3px;
+  width: 1px;
+  height: 10px;
+  margin: 3px;
+}
+
+/* NAVBAR CODE */
+
 .navbar {
   background-color: #1b1b1b;
   width: 100%;
@@ -46,6 +64,7 @@ body {
   display: flex;
   font-family: "comfortaa";
   font-size: 15px;
+  letter-spacing: 2px;
   color: #00fff0;
   margin-top: 16px;
   cursor: pointer;
@@ -86,8 +105,9 @@ body {
 .box-item {
   height: 20px;
   font-family: "comfortaa";
-  font-weight: bold;
+  font-weight: medium;
   padding-top: 20px;
+  letter-spacing: 3px;
   padding-bottom: 20px;
   color: #00fff0;
   background-color: #1b1b1b;
@@ -126,8 +146,6 @@ body {
   background-color: #00fff0;
   transform: rotate(-45deg);
 }
-/*Media Query*/
-
 @media (max-width: 870px) {
   .HmBurger {
     position: fixed;
@@ -166,4 +184,15 @@ body {
   100% {
     transform: rotateX(0deg);
   }
+}
+
+/* BODY ELEMENTS */
+
+.mainBlock {
+  display: flex;
+}
+.menuBlock {
+  width: 22.96875%;
+  background-color: aqua;
+  height: 200vh;
 }
