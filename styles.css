@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -24,10 +25,14 @@ body {
 }
 
 /* NAVBAR CODE */
-
+.Display {
+  z-index: -1;
+  width: 77.03125%;
+}
 .navbar {
   background-color: #1b1b1b;
   width: 100%;
+  z-index: 1;
   position: fixed;
   height: 70px;
   display: flex;
@@ -48,7 +53,8 @@ body {
   justify-content: center;
 }
 .Brand1 {
-  font-family: "londrina solid";
+  font-family: "MedievalSharp";
+  font-weight: bolder;
   font-size: 25px;
 }
 .Brand2 {
@@ -64,7 +70,7 @@ body {
   display: flex;
   font-family: "comfortaa";
   font-size: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: #00fff0;
   margin-top: 16px;
   cursor: pointer;
@@ -146,6 +152,44 @@ body {
   background-color: #00fff0;
   transform: rotate(-45deg);
 }
+.opac1 {
+  animation: OpacIn 0.5s ease-in;
+  opacity: 0.1;
+}
+.opac2 {
+  animation: OpacOut 0.5s ease-in;
+  opacity: 1;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  color: #00fff0;
+  font-family: "Comfortaa";
+  border-radius: 10px;
+  padding: 30px;
+  width: 77.03125%;
+}
+.Ab1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.Ab2 {
+  word-spacing: 10px;
+}
+.title {
+  color: aqua;
+  cursor: pointer;
+  padding: 10px;
+  border-top: aqua solid 3px;
+  border-bottom: aqua solid 3px;
+  font-family: "MedievalSharp";
+  left: 50%;
+  top: 170px;
+  font-size: 50px;
+  position: absolute;
+}
 @media (max-width: 870px) {
   .Display {
     margin-top: 80px;
@@ -199,6 +243,41 @@ body {
   }
 }
 
+@keyframes OpacIn {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes OpacOut {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* BODY ELEMENTS */
 
 .mainBlock {
@@ -208,4 +287,8 @@ body {
   width: 22.96875%;
   background-color: aqua;
   height: 200vh;
+}
+.bodyBlock {
+  display: flex;
+  flex-direction: column;
 }
