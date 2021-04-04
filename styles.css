@@ -352,3 +352,7 @@ color: #1B1B1B;
   width: 40px;
   height: 36px;
 }
+.bodyBlock {
+  display: flex;
+  flex-direction: column;
+}
