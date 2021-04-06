@@ -16,10 +16,10 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 37px;
-  border: 3px solid #00FFF0;
+  border: 3px solid #00fff0;
   box-sizing: border-box;
   display: block;
-  padding: 1.5rem 1.0rem;
+  padding: 1.5rem 1rem;
   color: aqua;
   list-style: none;
 }
@@ -41,7 +41,7 @@ h1 {
 /* NAVBAR CODE */
 .Display {
   z-index: -1;
-  width: 77.03125%;
+  width: 100%;
 }
 .navbar {
   background-color: #1b1b1b;
@@ -176,6 +176,7 @@ h1 {
 }
 .about {
   display: flex;
+  margin: 40px;
   flex-direction: column;
   background-color: #353535;
   color: #00fff0;
@@ -300,35 +301,25 @@ h1 {
 .menuBlock {
   width: 100%;
   background-color: #1b1b1b;
-  height: 200vh;
+  margin-top: 100px;
+  margin-right: 20px;
   display: flex;
-  justify-content: space-around;
-}
-.menuItem {
-  font-family: comfortaa;
-  position: absolute;
-  width: 184px;
-  height: 27px;
-  left: 83px;
-  top: 256px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 21px;
-  line-height: 23px;
-
-color: #1B1B1B;
+  flex-direction: column;
 }
 .sidebar-item {
   cursor: pointer;
+  font-family: "comfortaa";
   display: block;
-  font-size: 1.5rem;
-  padding: 1rem 1.5rem;
+  margin: 10px;
+  background-color: #1b1b1b;
+  font-size: 20px;
   color: aqua;
   list-style: none;
   padding: 15px 10px;
 }
 .sidebar-item:hover {
   color: black;
+  border-radius: 10px;
   background-color: #00fff0;
   border: none;
   transition: 0.6s all 0s ease;
@@ -337,12 +328,12 @@ color: #1B1B1B;
   display: flex;
   flex-direction: column;
 }
-.search-bar input{
+.search-bar input {
   width: 157px;
   height: 44px;
   left: 65px;
   top: 685px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 20px;
 }
 ::placeholder {
