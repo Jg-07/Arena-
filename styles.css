@@ -23,6 +23,31 @@ h1 {
   color: aqua;
   list-style: none;
 }
+a {
+  cursor: pointer;
+  font-family: "comfortaa";
+  display: block;
+  margin: 10px;
+  background-color: #1b1b1b;
+  font-size: 20px;
+  color: aqua;
+  list-style: none;
+  padding: 15px 10px;
+}
+a:hover{
+  color: black;
+  border-radius: 10px;
+  background-color: #00fff0;
+  border: none;
+  transition: 0.6s all 0s ease;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -306,7 +331,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-.sidebar-item {
+/* .sidebar-item {
   cursor: pointer;
   font-family: "comfortaa";
   display: block;
@@ -323,7 +348,7 @@ h1 {
   background-color: #00fff0;
   border: none;
   transition: 0.6s all 0s ease;
-}
+} */
 .bodyBlock {
   display: flex;
   flex-direction: column;
