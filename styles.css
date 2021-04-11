@@ -6,12 +6,19 @@
   margin: 0px;
 }
 body {
-  height: 200vh;
+  height: 150vh;
   background-color: #1b1b1b;
 }
-h1 {
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #353535;
+  height: 20vh;
+  margin-top: 110px;
+}
+.sideHead {
   font-family: Comfortaa;
-  text-transform: uppercase;
   text-align: center;
   font-style: normal;
   font-weight: bold;
@@ -20,13 +27,10 @@ h1 {
   border: 3px solid #00fff0;
   box-sizing: border-box;
   display: block;
-  padding: 1.5rem 1rem;
+  margin: 20px;
+  padding: 10px;
   color: aqua;
   list-style: none;
-}
-ul {
-  padding: 10px;
-  line-height: 24pt;
 }
 .sidebar {
   cursor: pointer;
@@ -39,7 +43,7 @@ ul {
   list-style: none;
   padding: 15px 10px;
 }
-.sidebar:hover{
+.sidebar:hover {
   color: black;
   border-radius: 10px;
   background-color: #00fff0;
@@ -70,6 +74,9 @@ ul {
 /* NAVBAR CODE */
 .Display {
   z-index: -1;
+  margin-top: 70px;
+  height: 70vh;
+  transition: 0.4s all 0s ease;
   width: 100%;
 }
 .navbar {
@@ -207,14 +214,16 @@ ul {
 }
 .about {
   display: flex;
-  margin: 40px;
+  margin-top: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
   flex-direction: column;
   background-color: #353535;
   color: #00fff0;
   font-family: "Comfortaa";
   border-radius: 10px;
   padding: 30px;
-  width: 77.03125%;
+  width: auto;
 }
 .Ab1 {
   font-size: 40px;
@@ -269,12 +278,9 @@ ul {
     display: block;
     position: fixed;
   }
-  .menuBlock {
+  #menuItems {
     display: none;
   }
-}
-.hidden {
-  display: none;
 }
 
 @keyframes dropDown {
@@ -330,44 +336,52 @@ ul {
   display: flex;
 }
 .menuBlock {
-  width: 100%;
+  width: 20%;
   background-color: #1b1b1b;
-  margin-top: 100px;
+  margin-top: -30px;
   margin-right: 20px;
+  height: 150vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
-<<<<<<< Updated upstream
-/* .sidebar-item {
+.sidebar-item {
   cursor: pointer;
   font-family: "comfortaa";
   display: block;
-  margin: 10px;
   background-color: #1b1b1b;
   font-size: 20px;
+  border-radius: 10px;
+  text-align: center;
   color: aqua;
   list-style: none;
-  padding: 15px 10px;
+  padding: 10px;
 }
 .sidebar-item:hover {
   color: black;
-  border-radius: 10px;
-  background-color: #00fff0;
-  border: none;
-  transition: 0.6s all 0s ease;
-} */
+}
 .bodyBlock {
   display: flex;
   flex-direction: column;
 }
-.search-bar input {
-  width: 157px;
-  height: 44px;
-  left: 65px;
-  top: 685px;
-  background: #ffffff;
-  border-radius: 20px;
+.search {
+  width: 80%;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #353535;
+  height: 30px;
+  font-size: 20px;
+  font-family: comfortaa;
+  color: #00fff0;
+  border: none;
+  padding: 10px;
 }
+.search:focus {
+  outline: none;
+}
+
 ::placeholder {
   padding: 15px;
 }
@@ -382,9 +396,11 @@ ul {
 .build-order {
   border: 1px #00fff0 solid;
   text-align: center;
+  margin: 20px;
+  border-radius: 10px;
   padding: 10%;
 }
-.build-order:hover{
+.build-order:hover {
   cursor: pointer;
   background-color: #00fff0;
   color: black;
@@ -392,6 +408,7 @@ ul {
   border: none;
 }
 .build-link {
+  border-radius: 10px;
   cursor: pointer;
   font-family: "comfortaa";
   display: block;
@@ -403,7 +420,7 @@ ul {
   list-style: none;
   padding: 15px 10px;
 }
-.build-link:hover{
+.build-link:hover {
   color: black;
   border-radius: 10px;
   background-color: #00fff0;
@@ -413,5 +430,17 @@ ul {
 .build-link:link {
   text-decoration: none;
 }
-=======
->>>>>>> Stashed changes
+.build-block {
+  margin-top: 50px;
+  padding: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+  border-radius: 10px;
+  font-family: comfortaa;
+  color: #00fff0;
+  background-color: #353535;
+}
+.hidden {
+  display: none;
+}
