@@ -165,6 +165,7 @@ footer {
   font-weight: medium;
   padding-top: 20px;
   letter-spacing: 3px;
+  cursor: pointer;
   padding-bottom: 20px;
   color: #00fff0;
   background-color: #1b1b1b;
