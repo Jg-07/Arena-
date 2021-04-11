@@ -12,6 +12,7 @@ body {
 h1 {
   font-family: Comfortaa;
   text-transform: uppercase;
+  text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5rem;
@@ -23,7 +24,11 @@ h1 {
   color: aqua;
   list-style: none;
 }
-a {
+ul {
+  padding: 10px;
+  line-height: 24pt;
+}
+.sidebar {
   cursor: pointer;
   font-family: "comfortaa";
   display: block;
@@ -34,18 +39,17 @@ a {
   list-style: none;
   padding: 15px 10px;
 }
-a:hover{
+.sidebar:hover{
   color: black;
   border-radius: 10px;
   background-color: #00fff0;
   border: none;
   transition: 0.6s all 0s ease;
 }
-a:link {
+.sidebar:link {
   text-decoration: none;
 }
-
-a:visited {
+.sidebar:visited {
   text-decoration: none;
 }
 ::-webkit-scrollbar {
@@ -383,4 +387,26 @@ a:visited {
   color: black;
   transition: 0.6s all 0s ease;
   border: none;
+}
+.build-link {
+  cursor: pointer;
+  font-family: "comfortaa";
+  display: block;
+  margin: 10px;
+  background-color: #353535;
+  font-size: 24px;
+  font-weight: bold;
+  color: #00fff0;
+  list-style: none;
+  padding: 15px 10px;
+}
+.build-link:hover{
+  color: black;
+  border-radius: 10px;
+  background-color: #00fff0;
+  border: none;
+  transition: 0.6s all 0s ease;
+}
+.build-link:link {
+  text-decoration: none;
 }
