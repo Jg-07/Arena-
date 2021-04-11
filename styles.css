@@ -133,6 +133,7 @@ ul {
 }
 .HmBurger {
   display: none;
+  z-index: 999;
 }
 .HmLine {
   margin: 3px;
@@ -176,6 +177,7 @@ ul {
 .CrossBurger {
   display: none;
   position: absolute;
+  z-index: 999;
   top: 33px;
   left: 89.54%;
 }
@@ -335,6 +337,7 @@ ul {
   display: flex;
   flex-direction: column;
 }
+<<<<<<< Updated upstream
 /* .sidebar-item {
   cursor: pointer;
   font-family: "comfortaa";
@@ -410,3 +413,5 @@ ul {
 .build-link:link {
   text-decoration: none;
 }
+=======
+>>>>>>> Stashed changes
