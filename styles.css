@@ -17,6 +17,9 @@ footer {
   height: 20vh;
   margin-top: 110px;
 }
+li {
+  padding: 5px;
+}
 .sideHead {
   font-family: Comfortaa;
   text-align: center;
