@@ -85,7 +85,7 @@ civSpecific.addEventListener("click", function(){
    aboombody.classList.add('hidden');
    civsbody.classList.remove('hidden');
  })
-home.addEventListener('click',function(){
+home.addEventListener('click', function(){
    bboombody.classList.add('hidden');
    baggbody.classList.add('hidden');
    aaggbody.classList.add('hidden');
